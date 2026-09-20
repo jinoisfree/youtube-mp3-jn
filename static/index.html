@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="권한이 있는 YouTube 영상의 오디오를 MP3로 변환합니다." />
+    <title>My MP3</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="title">
+        <p class="eyebrow">LOCAL AUDIO CONVERTER</p>
+        <h1 id="title">영상의 소리를<br /><span>간단하게 MP3로.</span></h1>
+        <p class="description">본인이 소유했거나 다운로드 허가를 받은 YouTube 영상만 변환해 주세요.</p>
+
+        <form id="converter" class="converter">
+          <label for="url">YouTube 영상 주소</label>
+          <div class="input-row">
+            <input id="url" name="url" type="url" inputmode="url" autocomplete="url"
+              placeholder="https://www.youtube.com/watch?v=..." required />
+            <button id="submit" type="submit">MP3 변환</button>
+          </div>
+          <label class="rights">
+            <input id="rights" type="checkbox" required />
+            <span>이 콘텐츠를 다운로드하고 변환할 권한이 있음을 확인합니다.</span>
+          </label>
+        </form>
+
+        <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+
+        <section class="history" aria-label="저장 완료 목록">
+          <button id="history-toggle" class="history-toggle" type="button"
+            aria-expanded="false" aria-controls="history-panel">
+            <span>저장 완료</span>
+            <span class="history-count">최신 5개</span>
+            <span class="history-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div id="history-panel" class="history-panel" hidden>
+            <p id="history-empty" class="history-empty">저장된 MP3가 없습니다.</p>
+            <ul id="history-list" class="history-list"></ul>
+          </div>
+        </section>
+      </section>
+
+      <section class="features" aria-label="앱 특징">
+        <article><strong>01</strong><h2>로컬 처리</h2><p>파일은 다운로드/My MP3 폴더에 저장됩니다.</p></article>
+        <article><strong>02</strong><h2>고품질 MP3</h2><p>FFmpeg로 최고 VBR 품질의 MP3를 만듭니다.</p></article>
+        <article><strong>03</strong><h2>단일 영상</h2><p>의도치 않은 재생목록 전체 다운로드를 막습니다.</p></article>
+      </section>
+    </main>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

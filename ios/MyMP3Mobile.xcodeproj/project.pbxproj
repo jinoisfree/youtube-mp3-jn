@@ -1,0 +1,96 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 60;
+	objects = {
+
+		A10000000000000000000001 /* MyMP3MobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* MyMP3MobileApp.swift */; };
+		A10000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* ContentView.swift */; };
+		A10000000000000000000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* Assets.xcassets */; };
+		A10000000000000000000004 /* remote-token.txt in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* remote-token.txt */; };
+
+		B10000000000000000000001 /* MyMP3MobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMP3MobileApp.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10000000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10000000000000000000005 /* remote-token.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ../../config/remote-token.txt; sourceTree = "<group>"; };
+		B10000000000000000000006 /* My MP3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My MP3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		C10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000002 /* MyMP3Mobile */,
+				C10000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C10000000000000000000002 /* MyMP3Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000001 /* MyMP3MobileApp.swift */,
+				B10000000000000000000002 /* ContentView.swift */,
+				B10000000000000000000003 /* Assets.xcassets */,
+				B10000000000000000000004 /* Info.plist */,
+				B10000000000000000000005 /* remote-token.txt */,
+			);
+			path = MyMP3Mobile;
+			sourceTree = "<group>";
+		};
+		C10000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (B10000000000000000000006 /* My MP3.app */);
+			name = Products;
+			sourceTree = "<group>";
+		};
+
+		D10000000000000000000001 /* MyMP3Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10000000000000000000002 /* Build configuration list for PBXNativeTarget */;
+			buildPhases = (
+				F10000000000000000000001 /* Sources */,
+				F10000000000000000000002 /* Frameworks */,
+				F10000000000000000000003 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = MyMP3Mobile;
+			productName = MyMP3Mobile;
+			productReference = B10000000000000000000006 /* My MP3.app */;
+			productType = "com.apple.product-type.application";
+		};
+
+		E10000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = { D10000000000000000000001 = { CreatedOnToolsVersion = 27.0; }; };
+			};
+			buildConfigurationList = E10000000000000000000002 /* Build configuration list for PBXProject */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (ko, Base);
+			mainGroup = C10000000000000000000001;
+			productRefGroup = C10000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (D10000000000000000000001 /* MyMP3Mobile */);
+		};
+
+		F10000000000000000000001 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001, A10000000000000000000002); runOnlyForDeploymentPostprocessing = 0; };
+		F10000000000000000000002 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		F10000000000000000000003 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000003, A10000000000000000000004); runOnlyForDeploymentPostprocessing = 0; };
+
+		G10000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+		G10000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; }; name = Release; };
+		G10000000000000000000003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = MyMP3Mobile/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.jinoisfree.MyMP3Mobile; PRODUCT_NAME = "My MP3"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; }; name = Debug; };
+		G10000000000000000000004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = MyMP3Mobile/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.jinoisfree.MyMP3Mobile; PRODUCT_NAME = "My MP3"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; }; name = Release; };
+
+		E10000000000000000000002 = {isa = XCConfigurationList; buildConfigurations = (G10000000000000000000001, G10000000000000000000002); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		D10000000000000000000002 = {isa = XCConfigurationList; buildConfigurations = (G10000000000000000000003, G10000000000000000000004); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+	};
+	rootObject = E10000000000000000000001 /* Project object */;
+}

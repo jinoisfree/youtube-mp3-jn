@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.DS_Store
+*.xcuserstate
+xcuserdata/
+downloads/*
+!downloads/.gitkeep
+dist/
+.build/
+vendor/
+config/remote-token.txt
