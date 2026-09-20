@@ -10,7 +10,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, WKNa
     private var healthTimer: Timer?
     private var healthAttempts = 0
     private lazy var downloadDirectory: URL = {
-        FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask)[0]
+        FileManager.default.homeDirectoryForCurrentUser
+            .appendingPathComponent("Library", isDirectory: true)
+            .appendingPathComponent("Mobile Documents", isDirectory: true)
+            .appendingPathComponent("com~apple~CloudDocs", isDirectory: true)
             .appendingPathComponent("My MP3", isDirectory: true)
     }()
 

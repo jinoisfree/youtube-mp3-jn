@@ -47,7 +47,7 @@ chmod +x build-macos-app.sh
 ./build-macos-app.sh
 ```
 
-완성된 앱은 `dist/My MP3.app`입니다. 처음 빌드할 때 `config/remote-token.txt`가 자동 생성되며, 이 파일은 Git에 포함되지 않습니다. macOS 앱에서 변환한 파일은 `다운로드/My MP3` 폴더에 저장됩니다.
+완성된 앱은 `dist/My MP3.app`입니다. 처음 빌드할 때 `config/remote-token.txt`가 자동 생성되며, 이 파일은 Git에 포함되지 않습니다. macOS 앱에서 변환한 파일은 `iCloud Drive/My MP3` 폴더에 저장됩니다.
 
 ## iPhone 앱 만들기
 
